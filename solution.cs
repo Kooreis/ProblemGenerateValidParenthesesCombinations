@@ -1,6 +1,9 @@
-using System;
-using System.Collections.Generic;
-
-class Program
+static void Main(string[] args)
 {
+    int n = Convert.ToInt32(Console.ReadLine());
+    List<string> result = GenerateParenthesis(n);
+    foreach (string s in result)
+    {
+        Console.WriteLine(s);
+    }
 }
